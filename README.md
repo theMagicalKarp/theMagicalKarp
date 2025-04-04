@@ -11,6 +11,11 @@
     <img src="https://i.imgur.com/yDt6Rms.png"  width="200">  
     <img src="https://i.imgur.com/XNQe2Ux.png"  width="200">  
   </p>
+
+  <p float="left">
+    <img src="https://github.com/theMagicalKarp/raytrace/raw/main/examples/cornell_box/render.png"  width="400">  
+    <img src="https://github.com/theMagicalKarp/raytrace/raw/main/examples/sweet_dreams/render.png"  width="400">  
+  </p>
 </p>
 
 <p align="center">
