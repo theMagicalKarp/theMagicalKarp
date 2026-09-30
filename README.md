@@ -37,14 +37,23 @@ rendered as emojis 😈.
 </tr>
 </table>
 
-## [raytrace](https://github.com/theMagicalKarp/raytrace)
+## [wgsl-raytrace](https://github.com/theMagicalKarp/wgsl-raytrace)
 
-A CPU-based ray tracer written in Rust, built while working through the
-[_Ray Tracing in One Weekend_](https://raytracing.github.io/) book series.
-Scenes are defined in TOML and rendered from the command line.
+A GPU path tracer written in Rust, running headless on
+[wgpu](https://wgpu.rs/) with its tracing kernel written in
+[WGSL](https://www.w3.org/TR/WGSL/). Features a Blender-style Principled BSDF
+_(GGX metals, rough glass, emission, subsurface scattering)_, image and
+procedural textures, HDRI lighting, multiple importance sampling over a BVH, and
+an SVGF-style à-trous denoiser. It grew out of
+[raytrace](https://github.com/theMagicalKarp/raytrace), my original CPU ray
+tracer built while working through the
+[_Ray Tracing in One Weekend_](https://raytracing.github.io/) series, and reads
+the same TOML scene format.
 
 <p align="center">
-  <img src="./docs/assets/melee.png" alt="ray-traced render" />
+  <img width="32%" src="./docs/assets/raytrace1.jpg" alt="path-traced scene with a glass torus, chrome sphere, and draped cloth" />
+  <img width="32%" src="./docs/assets/raytrace2.jpg" alt="grid of spheres sweeping roughness, metallic, IOR, alpha, and emission" />
+  <img width="32%" src="./docs/assets/raytrace3.jpg" alt="textured stone cube and copper sphere on wood and woven carpet" />
 </p>
 
 ## [shaders](https://github.com/theMagicalKarp/shaders)
